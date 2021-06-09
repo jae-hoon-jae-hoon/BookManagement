@@ -71,7 +71,7 @@ function bindSaveButton() {
 }
 
 async function main() {
-  // 버튼에 이벤트 연결
+  // Save버튼에 이벤트 연결
   bindSaveButton();
 
   // 토큰 체크

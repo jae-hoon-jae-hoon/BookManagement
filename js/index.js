@@ -78,7 +78,7 @@ function render(books) {
     bookElement.innerHTML = `
     <div class="card mb-4 shadow-sm">
       <div class="card-body">
-        <p class="card-text">${book.title === "" ? "제목 없음" : book.title}</p>
+        <p class="card-text">${book.title}</p>
         <div class="d-flex justify-content-between align-items-center">
           <div class="btn-group">
             <a href="/book?id=${book.bookId}">
@@ -120,7 +120,7 @@ function render(books) {
 }
 
 async function main() {
-  // 버튼에 이벤트 연결
+  //  로그아웃 버튼
   bindLogoutButton();
 
   // 토큰 체크
